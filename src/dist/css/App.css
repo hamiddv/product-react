@@ -1,0 +1,10 @@
+@media (min-width: 320px) {
+  .responsived-border {
+    border: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .responsived-border {
+    border: 1px solid #dee2e6 !important;
+  }
+}

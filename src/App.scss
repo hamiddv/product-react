@@ -1,0 +1,11 @@
+@import "../node_modules//include-media/dist/include-media";
+
+
+.responsived-border{
+    @include media(">=phone"){
+        border: none!important;
+    }
+    @include media(">=tablet"){
+        border: 1px solid #dee2e6!important;
+    }
+}

@@ -1,0 +1,231 @@
+:root {
+    --primary-color-brown: #ab7a5f;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.link-underline {
+    width: 0rem;
+    transform: translateX(0px);
+    transition: ease-in all 200ms;
+}
+
+.hero-section-image::before {
+    content: "";
+    position: absolute;
+    background: #decbc0;
+    width: 10%;
+    height: 80%;
+    bottom: 0%;
+    left: 11%;
+    z-index: -100;
+    border-radius: 0.375rem;
+}
+
+.shop-btn, .see-more, .buy-btn {
+    background-color: #ab7a5f !important;
+    padding: .75rem;
+    color: white !important;
+    border: none;
+    border-radius: .375rem;
+    font-weight: 200;
+    transition: all ease-in 400ms !important;
+}
+
+.shop-btn:hover, .see-more:hover, .buy-btn:hover {
+    color: black !important;
+    background-color: #c5a491 !important;
+}
+
+.bg-inherit {
+    background-color: inherit;
+}
+
+.title-underline {
+    width: 10rem;
+    height: 3px;
+    border-radius: .9rem;
+    background-color: #ab7a5f;
+}
+
+.email-button-submit-home {
+    background-color: #ab7a5f !important;
+    color: black;
+    transition: all ease-in 200ms;
+}
+
+.email-button-submit-home:hover, .see-more:hover {
+    color: white;
+}
+
+.category-name, .company-name, .color {
+    color: rgba(33, 37, 41, 0.50);
+}
+
+.category-name:hover, .company-name:hover {
+    color: #333;
+}
+
+.category-name.active, .company-name.active, .color.active {
+    color: #333 !important;
+}
+
+.radio-container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+.radio-container span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    transition: all ease-in 200ms;
+    opacity: 50%;
+}
+
+.radio-container:hover span {
+    opacity: 1;
+    scale: 1.1;
+}
+
+.radio-container span svg {
+    display: none;
+}
+
+.radio-container span.active {
+    opacity: 1;
+    scale: 1.1;
+}
+
+.radio-container span.active svg {
+    display: block;
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+.layout-container {
+    position: relative;
+}
+
+.layout-container input {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.layout-container div {
+    transition: all ease-in 400ms;
+}
+
+.layout-container input:hover ~ div {
+    background: #333;
+    color: white;
+}
+
+.layout-container input:checked ~ div {
+    background: #333;
+    color: white;
+}
+
+.layout-container.d-sm-block input:hover ~ div {
+    background: #333;
+    color: white;
+}
+
+.layout-container input:checked ~ div svg {
+    padding: .2rem;
+}
+
+.layout-container div svg {
+    padding: .35rem;
+}
+
+.set-sm {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.product-image-backdrop {
+    position: absolute;
+    background: rgb(0, 0, 0, .6);
+    transition: all 400ms ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.375rem;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+}
+
+.product-image-backdrop:hover {
+    opacity: 1;
+}
+
+.product-image {
+    transition: all ease-in 500ms;
+}
+
+.product-image:hover, .product-image.active {
+    scale: 1.1;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    transform: translateY(-2px);
+}
+
+.submit {
+    font-weight: bold;
+    transition: all ease 500ms;
+    background: white;
+    color: #333333;
+}
+
+.submit:hover {
+    background: #333333;
+    color: white;
+}
+
+.toast {
+    opacity: 0;
+    display: block !important;
+}
+
+.toast-show {
+    animation: 5s show-toast;
+}
+
+@keyframes show-toast {
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.user-basket-product {
+    transition: all ease-in .2s;
+}
+
+.user-basket-product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important
+}
